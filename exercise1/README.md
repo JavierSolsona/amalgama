@@ -1,4 +1,4 @@
-# Exercice 1
+# Exercise 1
 
 ## 1 State all problems or possibilities for improvement for this component. Mention which of the problems or possibilities for improvement stated are the most relevant.
 

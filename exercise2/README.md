@@ -1,4 +1,4 @@
-# Exercice 2
+# Exercise 2
 
 ## 1 Think about the best way to store this information in the browser. Code the solution using some state management strategy. Attach the code.
 

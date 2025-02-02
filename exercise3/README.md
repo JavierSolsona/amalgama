@@ -1,4 +1,4 @@
-# Exercice 3
+# Exercise 3
 
 ## Instructions
 
