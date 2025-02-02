@@ -1,0 +1,1 @@
+export const LOGIN = 'https://2v234d7xc7.execute-api.us-east-1.amazonaws.com/default/login';
