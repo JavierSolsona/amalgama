@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: app
+    build: .
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - /app/node_modules

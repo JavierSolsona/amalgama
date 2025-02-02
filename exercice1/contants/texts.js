@@ -1,0 +1,9 @@
+export const HOME = 'Home';
+export const MY_CONTACTS = 'My Contacts';
+export const CONTACTS = 'Contacts';
+export const ICON = '👥';
+export const EMAIL = 'Email:';
+export const PHONE = 'Phone';
+export const ADDRESSES = 'Addresses:';
+export const ADDRESS = 'Address:';
+export const PROFILE = 'Profile';
