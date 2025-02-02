@@ -14,5 +14,6 @@ Each excercie has an internal readme to verify the responses to the questions an
 - Made the first excercie 1 and most of the excercie 2 in the first 2 hours
 - Take some minutes to create the repository, clone and made the first commit
 - After others 15 minutes finished the excercie 2 with the second commit
-- Take like 10 minutes to create this readme 
-
+- Take like 10 minutes to create this readme
+- Added excercie 3 after 1 hour and 40 min of work on it
+- Enahnce readme in 15 min
