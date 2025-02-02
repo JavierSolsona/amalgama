@@ -1,0 +1,2 @@
+# amalgama
+Technical test
