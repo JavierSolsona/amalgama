@@ -33,7 +33,3 @@ Please check the file `contacts.js` and the code inside the folder constants, an
 Please check the file `profile.js`
 
 ### Note: After create the profile file as the profile and the contacts views had the similar pages I move that to be a different component
-
-### Posible improvent to do
-
-- Move the Nav bar also to a different component
