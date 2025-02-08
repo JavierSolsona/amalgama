@@ -13,7 +13,9 @@ I assume that the values inside the contacts prop can in that format, it is not 
 - The contact.addresses map has a missing `)`. This one is very important because is need it to run the works.
 - The maps miss the key prop. This one is very important because is need it to run the works.
 - Add an alt to the image in case there is not image at less a text is display. Generally this is usefull for the end user
-
+- Moved addresses to a different component, this help to increase readability
+- Moved nav bar to a different component, this help to increase readability and code reutilization
+- Created util function to generate the profile object, this help to increase readability and code reutilization
 
 ## 2 Factorize the code and attach how the solution will look after refactoring.
 
@@ -27,6 +29,9 @@ Please check the file `contacts.js` and the code inside the folder constants, an
 - Added the `)` in the map to made the code works
 - Added the key prop in the maps to made the code works
 - Added alt to the image, this can help to the end user in case there is not URL for the avatar.
+- Moved addresses to a different component, this help to increase readability
+- Moved nav bar to a different component, this help to increase readability and code reutilization
+- Created util function to generate the profile object, this help to increase readability and code reutilization
 
 ## 4 Please add a contact profile view (layout similar to the one shown in the list), assuming that the contact data is avatar , first_name , last_name , company , details , email , phone_number and address . Attach the proposed solution.
 
