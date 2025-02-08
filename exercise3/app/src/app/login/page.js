@@ -1,28 +1,18 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useRouter } from 'next/navigation';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
+import withGuest from '@/app/hoc/guest';
 import { LOGIN } from '@/app/constants/urls';
 import { setToken } from '@/app/store/slices/userSlice';
-import { HOME } from '@/app/constants/routes';
 import { LOGIN as LOGIN_TEXT } from '@/app/constants/texts';
 
 const LoginPage = () => {
   const dispatch = useDispatch();
-  const { push } = useRouter();
-  const token = useSelector((state) => state.user.token); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    if (token) {
-        push(HOME);
-    }
-  }, [token]);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,4 +66,4 @@ const LoginPage = () => {
   );
 }
 
-export default LoginPage;
+export default withGuest(LoginPage);

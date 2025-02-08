@@ -1,11 +1,11 @@
 'use client'
 
 import styles from './page.module.css';
-import React, { useEffect } from 'react';
-
+import React from 'react';
 import { useRouter } from 'next/navigation';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
+import withAuth from '@/app/hoc/auth';
 import { removeToken } from '@/app/store/slices/userSlice';
 import { LOGIN } from '@/app/constants/routes';
 import { WELCOME_MESSAGE, GO_LOGIN, LOGOUT } from '@/app/constants/texts';
@@ -13,14 +13,6 @@ import { WELCOME_MESSAGE, GO_LOGIN, LOGOUT } from '@/app/constants/texts';
 const Home = () => {
   const { push } = useRouter();
   const dispatch = useDispatch();
-  const token = useSelector((state) => state.user.token); 
-
-  useEffect(() => {
-    if (!token) {
-        push(LOGIN);
-    }
-  }, [token]);
-
 
   const goToLogin = () => {
     push(LOGIN);
@@ -51,4 +43,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default withAuth(Home);
