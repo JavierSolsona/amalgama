@@ -1,5 +1,17 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
+const authorsSlice = createSlice({
+  name: 'authors',
+  initialState: [],
+  reducers: {
+    setAuthors: (state, action) => {
+        return action.payload;
+    },
+  },
+});
+
+export const { setAuthors } = authorsSlice.actions;
+
 const booksSlice = createSlice({
   name: 'books',
   initialState: [],
@@ -26,6 +38,7 @@ export const { setUsers } = usersSlice.actions;
 
 const store = configureStore({
   reducer: {
+    authors: authorsSlice.reducer,
     books: booksSlice.reducer,
     users: usersSlice.reducer
   },
